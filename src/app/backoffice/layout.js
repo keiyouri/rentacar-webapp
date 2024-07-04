@@ -1,12 +1,15 @@
 import "./backoffice.css";
+import Menu from "./Menu";
 
-export default function RootLayout({ children }) {
-    return (<section id="backoffice">
-        <nav>
-            Implementar aquí el menú de navegación
-        </nav>
-        <section>
-            {children}
-        </section>
-    </section>);
+ const Layout = ({ children }) => (
+        <div className="backoffice">
+            <Menu />
+            <div className="content">
+                {children}
+            </div>
+        </div>
+    );
+
+    export default Layout;
+
 }

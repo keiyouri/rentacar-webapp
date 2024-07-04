@@ -1,0 +1,13 @@
+
+.backoffice {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.menu {
+    grid-column: 1;
+}
+
+.content {
+    grid-column: 2;
+}
